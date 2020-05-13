@@ -1,5 +1,4 @@
 @import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
-@import url("https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css");
 
 html,
 body {
@@ -92,7 +91,8 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  color: rgba(106, 115, 132); /*진*/
 }
 
 /* make sure to set some focus styles for accessibility */
@@ -117,7 +117,7 @@ section {
 
 body {
   line-height: 1;
-  /* background: rgba(244, 247, 253); */
+  background: rgba(244, 247, 253);
 }
 
 ol,
@@ -463,13 +463,13 @@ h1 {
   padding-bottom: 40px;
   font-weight: 500;
   margin-top: 60px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #ddd;
 }
 h2 {
   font-size: 26px;
   color: #222;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 h3 {
@@ -511,12 +511,11 @@ code {
   height: 100%;
   background: #fff;
   width: 260px;
-  padding: 0px 30px;
+  padding: 0px 70px;
   overflow: hidden;
   position: fixed;
   left: 0px;
   top: 0px;
-  border-right: solid 1px #ccc;
 }
 .lnb ul {
   display: block;
@@ -524,12 +523,12 @@ code {
 }
 .lnb li a {
   font-size: 20px;
-  color: #333;
+  color: rgba(155, 162, 180);
   display: block;
   text-decoration: none;
   font-weight: 500;
   display: block;
-  padding: 8px 0px;
+  padding: 15px 0px;
 }
 
 .lnb li a.on {
@@ -549,7 +548,7 @@ a:active {
 
 .content section {
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   overflow: hidden;
   display: inline-block;
 }
@@ -558,14 +557,14 @@ a:active {
   display: flex;
 }
 .bg_color li {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 20px;
   margin-top: 0px;
-  width: 50px;
+  border: 1px solid rgba(155, 164, 181);
 }
 .bg_color li:nth-child(1) {
   margin-left: 0px;
