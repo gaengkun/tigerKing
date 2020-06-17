@@ -1,15 +1,16 @@
 // Components/App.js
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Header from "./components/Header";
-import Background from "./pages/Background";
-import Bem from "./pages/Bem";
-import Font from "./pages/Font";
-import Css from "./pages/Css";
-import Import from "./pages/Import";
-import Example from "./pages/Example";
-import Sassbem from "./pages/Sassbem";
-import Code from "./pages/Code";
+import Header from "./components/header";
+import Background from "./pages/background";
+import Bem from "./pages/bem";
+import Button from "./pages/button";
+import Code from "./pages/code";
+import Css from "./pages/css";
+import Example from "./pages/example";
+import Font from "./pages/font";
+import Import from "./pages/import";
+import Sassbem from "./pages/sassbem";
 
 const App = () => {
   return (
@@ -19,13 +20,14 @@ const App = () => {
         <div className="content">
           <Switch>
             <Route exact path="/" component={Background}></Route>
-            <Route path="/Font" component={Font}></Route>
-            <Route path="/Bem" component={Bem}></Route>
-            <Route path="/Css" component={Css}></Route>
-            <Route path="/Import" component={Import}></Route>
-            <Route path="/Example" component={Example}></Route>
-            <Route path="/Sassbem" component={Sassbem}></Route>
-            <Route path="/Code" component={Code}></Route>
+            <Route path="/font" component={Font}></Route>
+            <Route path="/bem" component={Bem}></Route>
+            <Route path="/css" component={Css}></Route>
+            <Route path="/import" component={Import}></Route>
+            <Route path="/example" component={Example}></Route>
+            <Route path="/sassbem" component={Sassbem}></Route>
+            <Route path="/code" component={Code}></Route>
+            <Route path="/button" component={Button}></Route>
           </Switch>
         </div>
       </div>

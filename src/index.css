@@ -460,7 +460,7 @@ h1 {
   font-weight: 500;
   margin-top: 60px;
   font-weight: 900;
-  color: rgba(106, 115, 132);
+  color: #2f3646;
   border-bottom: 1px solid #ccc;
 }
 h2 {
@@ -524,7 +524,7 @@ code {
   color: rgba(155, 164, 181);
 }
 
-.lnb li a.on {
+.lnb li a.acitve {
   color: #333;
 }
 

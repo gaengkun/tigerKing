@@ -10,22 +10,25 @@ const Header = () => {
           <Link to="/">01. Backgrounds</Link>
         </li>
         <li>
-          <Link to="/Font">02. font</Link>
+          <Link to="/font">02. font</Link>
         </li>
         <li>
-          <Link to="/Bem">03. BEM Css Style</Link>
+          <Link to="/bem">03. BEM Css Style</Link>
         </li>
         <li>
-          <Link to="/Import">04. Css import</Link>
+          <Link to="/import">04. Css import</Link>
         </li>
         <li>
-          <Link to="/Example">05. Css Example</Link>
+          <Link to="/example">05. Css Example</Link>
         </li>
         <li>
-          <Link to="/Sassbem">06. Sassbem</Link>
+          <Link to="/sassbem">06. Sassbem</Link>
         </li>
         <li>
-          <Link to="/Code">07. Code Style</Link>
+          <Link to="/code">07. Code Style</Link>
+        </li>
+        <li>
+          <Link to="/button">08. button</Link>
         </li>
       </ul>
     </div>
