@@ -9,26 +9,30 @@ export default function SelectBoxComponent(props) {
   const handleClick = (idx) => {
     dispatch({ type: "open" });
     dispatch({ type: "select", idx: idx });
-    if (state.boxList) {
-    }
+
+    // if (dispatch({ type: "moreButton" })) {
+    //   console.log("11111");
+    // }
   };
 
-  console.log(state.valueText);
-
   return (
-    <div className="selectModule" style={{ width: `${props.width}px` }}>
-      <div className={`select ${state.isOpen ? "open" : "close"}`} onClick={() => dispatch({ type: "open" })}>
-        {state.boxList[state.selectIdx || 0].text}
+    <div>
+      <div className="selectModule" style={{ width: `${props.width}px` }}>
+        <div className={`select ${state.isOpen ? "open" : "close"}`} onClick={() => dispatch({ type: "open" })}>
+          {state.boxList[state.selectIdx || 0].text}
+        </div>
+        <div className={`optionBox ${state.isOpen ? "open" : "close"}`}>
+          {state.boxList.map((item, index) => {
+            return (
+              <div className="option" key={index} onClick={() => handleClick(index)}>
+                {item.text}
+              </div>
+            );
+          })}
+        </div>
       </div>
-      <div className={`optionBox ${state.isOpen ? "open" : "close"}`}>
-        {state.boxList.map((item, index) => {
-          return (
-            <div className="option" key={index} onClick={() => handleClick(index)}>
-              {item.text}
-            </div>
-          );
-        })}
-      </div>
+
+      {state.isMore ? "111" : "2222"}
     </div>
   );
 }

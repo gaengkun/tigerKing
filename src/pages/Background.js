@@ -28,11 +28,8 @@ const selectReducer = (state, action) => {
         selectIdx: action.idx,
       };
 
-    case "value":
-      return {
-        ...state,
-        selectIdx: action.idx,
-      };
+    case "moreButton":
+      return <div>sdfasdfsd</div>;
 
     default:
       throw new Error();
