@@ -1,10 +1,9 @@
 import React from "react";
+import "../css/bem.css";
 // import styled from "styled-components";
 // import icon_change from "../images/icon_change.png";
 import "../css/Sassbem.scss";
-import "../css/bem.css";
 import PrevIcon from "../images/PrevIcon.svg";
-
 import Scssbem from "../images/scssbem.png";
 import Scssbem2 from "../images/scssbem2.png";
 
@@ -19,7 +18,7 @@ const Sassbem = () => {
       </section>
       <div className="chas">
         <div className="title mobile_padding">
-          <img src={PrevIcon} className="title--prev" alt="logo" />
+          <img src={PrevIcon} className="title--prev" alt="logo" alt="" />
           <strong className="title--text">달 충전하기</strong>
         </div>
         <div className="payment mobile_padding">
@@ -46,9 +45,9 @@ const Sassbem = () => {
       <br />
       <br />
       <section className="ed_color">
-        <img src={Scssbem} className="bem_img" />
+        <img src={Scssbem} className="bem_img" alt="" />
 
-        <img src={Scssbem2} className="bem_img" />
+        <img src={Scssbem2} className="bem_img" alt="" />
       </section>
     </div>
   );

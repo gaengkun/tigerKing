@@ -1,24 +1,19 @@
 import React from "react";
-import resetcss from "../images/resetcss.png";
-import letter from "../images/letter.png";
 import "../css/code.css";
+import letter from "../images/letter.png";
+import resetcss from "../images/resetcss.png";
 
 const Code = () => {
   return (
     <div>
       <section>
         <h2>reset.css</h2>
-        <img src={resetcss} />
+        <img src={resetcss} alt="" />
         <br />
         <br />
         <div className="bem_text">
           <b>
-            <a
-              href="https://gist.github.com/DavidWells/18e73022e723037a50d6"
-              target="_blank"
-            >
-              https://gist.github.com/DavidWells/18e73022e723037a50d6
-            </a>
+            <a href="https://gist.github.com/DavidWells/18e73022e723037a50d6">https://gist.github.com/DavidWells/18e73022e723037a50d6</a>
           </b>
           <br />
           <br />
@@ -28,19 +23,16 @@ const Code = () => {
 
       <section>
         <h2>특수문자 표현</h2>
-        <img src={letter} />
+        <img src={letter} alt="" />
         <br />
         <br />
         <div className="bem_text">
           <b>
-            <a href="http://kor.pe.kr/util/4/charmap2.htm" target="_blank">
-              http://kor.pe.kr/util/4/charmap2.htm
-            </a>
+            <a href="http://kor.pe.kr/util/4/charmap2.htm">http://kor.pe.kr/util/4/charmap2.htm</a>
           </b>
           <br />
           <br />
-          특수문자 적용에서 문자표현은 코딩도중 html 상에서 특수문자가 나오지
-          않는 경우가 있어서 숫자 표현으로 적용.
+          특수문자 적용에서 문자표현은 코딩도중 html 상에서 특수문자가 나오지 않는 경우가 있어서 숫자 표현으로 적용.
         </div>
       </section>
 
@@ -105,8 +97,7 @@ const Code = () => {
           19. vertical-align
           <br />
           <br />
-          20. clear 21. content 22. animation 23. etc 출처:
-          https://ohjamdol.tistory.com/14 [오잠돌라이프]
+          20. clear 21. content 22. animation 23. etc 출처: https://ohjamdol.tistory.com/14 [오잠돌라이프]
         </div>
       </section>
 

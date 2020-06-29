@@ -13,7 +13,7 @@ const Before = () => {
         <b>- main.html</b>
         <br />
         <br />
-        <img src={cssimport} className="bem_img" />
+        <img src={cssimport} className="bem_img" alt="" />
 
         <div className="bem_text">
           스타일 영역 구분은 주로 블록 단위로 크게 나누었고,
@@ -25,11 +25,9 @@ const Before = () => {
         <b>- sub.html</b>
         <br />
         <br />
-        <img src={csssearch} className="bem_img" />
+        <img src={csssearch} className="bem_img" alt="" />
 
-        <div className="bem_text">
-          서브페이지에서 사용되는 css만 import해서 사용.
-        </div>
+        <div className="bem_text">서브페이지에서 사용되는 css만 import해서 사용.</div>
       </section>
     </div>
   );

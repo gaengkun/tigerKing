@@ -30,6 +30,9 @@ const Header = () => {
         <li>
           <Link to="/button">08. button</Link>
         </li>
+        <li>
+          <Link to="/checkbox">09. checkbox</Link>
+        </li>
       </ul>
     </div>
   );

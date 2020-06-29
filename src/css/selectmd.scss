@@ -1,0 +1,85 @@
+.selectModule {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+
+  .select {
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 40px; // 세로 여백 변경값
+    line-height: 40px;
+
+    padding: 0px 20px; // 양옆 여백 변경값
+    background: url(../images/select_down.png) right 0px center no-repeat #fff; // 이미지 및 여백 변경값
+    cursor: pointer;
+
+    &.open {
+      background: url(../images/select_up.png) right 0px center no-repeat #fff; // 이미지 및 여백
+    }
+  }
+
+  .optionBox {
+    overflow-y: auto;
+    width: 100%;
+    max-height: 200px;
+    position: absolute;
+    top: 40px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #fff;
+    margin-top: -1px;
+    display: none;
+    border: 1px solid #eee;
+
+    &.open {
+      display: block;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #e5e5e5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      background-color: #acacac;
+    }
+  }
+  .option {
+    width: 100%;
+    top: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 20px;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &:hover {
+      background: #333;
+      color: #fff;
+    }
+
+    &:active {
+      background: #333;
+      color: #fff;
+    }
+
+    &.on {
+      display: block;
+    }
+  }
+}
+
+.selBox {
+  display: flex;
+
+  & > div {
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,21 @@
+.checkbox {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  border-radius: 4px;
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #fff url(../images/ico-checkbox-off.svg) no-repeat center center;
+  transition: 0.2s all ease 0s;
+  &:active {
+    width: 23px;
+    height: 23px;
+    transition: 0.1s all ease 0s;
+  }
+  &.on {
+    background: #632beb url(../images/ico-checkbox-on.svg) no-repeat center center;
+    transition: 0.2s all ease 0s;
+  }
+}

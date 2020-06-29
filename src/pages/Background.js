@@ -1,8 +1,60 @@
-import React from "react";
+import React, { useReducer } from "react";
+import Checkbox from "./checkbox";
+import SelectMd from "./selectmd";
+import SlideButton from "./slideButton";
+
+const initialValue = {
+  isOpen: false,
+  boxList: [
+    { value: 0, text: "a" },
+    { value: 1, text: "b" },
+    { value: 2, text: "c" },
+  ],
+  selectIdx: 0,
+
+  valueText: ["aa"],
+};
+
+const selectReducer = (state, action) => {
+  switch (action.type) {
+    case "open":
+      return {
+        ...state,
+        isOpen: !state.isOpen,
+      };
+    case "select":
+      return {
+        ...state,
+        selectIdx: action.idx,
+      };
+
+    case "value":
+      return {
+        ...state,
+        selectIdx: action.idx,
+      };
+
+    default:
+      throw new Error();
+  }
+};
 
 const Background = () => {
+  const [state, dispatch] = useReducer(selectReducer, initialValue);
+  const [state2, dispatch2] = useReducer(selectReducer, initialValue);
+
   return (
     <>
+      <Checkbox />
+      <SlideButton />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="selBox">
+        <SelectMd width={100} state={state} dispatch={dispatch} />
+        <SelectMd width={100} state={state2} dispatch={dispatch2} />
+      </div>
       <section>
         <h2>Background Colors</h2>
         <ul className="bg_color">

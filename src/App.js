@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "./components/header";
 import Background from "./pages/background";
 import Bem from "./pages/bem";
-import Button from "./pages/button";
+import Checkbox from "./pages/checkbox";
 import Code from "./pages/code";
 import Css from "./pages/css";
 import Example from "./pages/example";
@@ -27,7 +27,7 @@ const App = () => {
             <Route path="/example" component={Example}></Route>
             <Route path="/sassbem" component={Sassbem}></Route>
             <Route path="/code" component={Code}></Route>
-            <Route path="/button" component={Button}></Route>
+            <Route path="checkbox" component={Checkbox}></Route>
           </Switch>
         </div>
       </div>
