@@ -46,6 +46,9 @@ const Background = () => {
   return (
     <>
       <Checkbox />
+      <Checkbox />
+      <Checkbox />
+      <Checkbox />
       <SlideButton />
       <br />
       <br />
